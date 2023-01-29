@@ -41,7 +41,7 @@ public class UserRecyclerViewAdapter extends RecyclerView.Adapter<UserRecyclerVi
         User user = users.get(position);
         holder.name.setText(user.getName());
         holder.surname.setText(user.getSurname());
-        holder.age.setText(String.valueOf(user.getAge()));
+        holder.age.setText(user.getAge() +" years");
         holder.city.setText(user.getCity());
     }
 
