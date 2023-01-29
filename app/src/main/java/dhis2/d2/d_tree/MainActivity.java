@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText edFilterByCity;
     private RecyclerView userRecyclerView;
     private UserRecyclerViewAdapter adapter;
+    private TextView tvErrorMessage;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -49,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
             }else {
                 progressBar.setVisibility(View.GONE);
+            }
+            if(fetchUsersState.name().equals(FetchUsersState.ERROR.name())){
+                tvErrorMessage.setVisibility(View.VISIBLE);
             }
 
         });
@@ -95,5 +100,6 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.loadUsersProgressBar);
         edFilterByCity = findViewById(R.id.etFilterEntriesByCity);
         userRecyclerView = findViewById(R.id.rvUsersRecyclerView);
+        tvErrorMessage = findViewById(R.id.tvErrorMessage);
     }
 }
