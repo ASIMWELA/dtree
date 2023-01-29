@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Locale;
 
 import dhis2.d2.d_tree.R;
-import dhis2.d2.d_tree.data.model.User;
 
 public class UserRecyclerViewAdapter extends RecyclerView.Adapter<UserRecyclerViewAdapter.ViewHolder> {
 

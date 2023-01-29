@@ -4,7 +4,6 @@ package dhis2.d2.d_tree.user;
 
 import java.util.List;
 
-import dhis2.d2.d_tree.data.model.User;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import rx.Observable;

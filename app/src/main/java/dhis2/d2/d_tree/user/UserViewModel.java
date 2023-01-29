@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel;
 
 import java.util.List;
 
-import dhis2.d2.d_tree.data.model.User;
 import dhis2.d2.d_tree.util.Constants;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;

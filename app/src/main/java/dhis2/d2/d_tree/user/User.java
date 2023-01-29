@@ -1,4 +1,4 @@
-package dhis2.d2.d_tree.data.model;
+package dhis2.d2.d_tree.user;
 
 import com.google.gson.annotations.SerializedName;
 
